@@ -1,6 +1,6 @@
 # Build Stage
 
-FROM maven:3.8.3-openjdk
+FROM maven:3.8.3-openjdk as build
 
 COPY . .
 RUN mvn clean package -DskipTests
