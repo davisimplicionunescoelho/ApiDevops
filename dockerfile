@@ -3,7 +3,7 @@
 FROM maven:3.8.3-openjdk
 
 COPY . .
-RUN mvn clear package -DskipTests
+RUN mvn clean package -DskipTests
 
 #Packege Stage 
 
